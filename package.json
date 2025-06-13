@@ -1,0 +1,14 @@
+{
+  "name": "node-microservice-template",
+  "version": "0.0.1",
+  "description": "A starter template for Node.js microservices using TypeScript, Express, Docker, and ESLint/Prettier.",
+  "main": "dist/index.js",
+  "scripts": {
+    
+  },
+  "author": "Saiful Islam Uday <uday.dev.bd@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
