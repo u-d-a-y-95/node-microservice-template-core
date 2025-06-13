@@ -4,7 +4,9 @@
   "description": "A starter template for Node.js microservices using TypeScript, Express, Docker, and ESLint/Prettier.",
   "main": "dist/index.js",
   "scripts": {
-    "dev":"tsc"
+    "dev": "tsc",
+    "format:check": "npx prettier . --check",
+    "format:fix": "npx prettier . --write"
   },
   "author": "Saiful Islam Uday <uday.dev.bd@gmail.com>",
   "license": "MIT",
@@ -12,6 +14,7 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "prettier": "3.5.3",
     "typescript": "^5.8.3"
   }
 }
