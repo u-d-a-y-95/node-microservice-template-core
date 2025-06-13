@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsc",
-    "format:check": "npx prettier . --check",
-    "format:fix": "npx prettier . --write"
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+   "lint": "eslint",
+  "lint:fix": "eslint --fix"
   },
   "author": "Saiful Islam Uday <uday.dev.bd@gmail.com>",
   "license": "MIT",
@@ -14,7 +16,10 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
     "prettier": "3.5.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
   }
 }
