@@ -10,6 +10,7 @@ export default tseslint.config(
       "node_modules",
       "eslint.config.mjs",
       "lint-staged.config.mjs",
+      "commitlint.config.mjs",
     ],
   },
   {
