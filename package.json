@@ -2,9 +2,11 @@
   "name": "node-microservice-template",
   "version": "0.0.1",
   "description": "A starter template for Node.js microservices using TypeScript, Express, Docker, and ESLint/Prettier.",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "tsc",
+    "dev": "nodemon ./src/server.ts",
+    "build": "tsc",
+    "start": "node ./dist/server.js",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
     "lint": "eslint",
@@ -20,11 +22,17 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.28.0",
+    "@types/express": "^5.0.3",
     "eslint": "^9.28.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
+    "nodemon": "^3.1.10",
     "prettier": "3.5.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.34.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
