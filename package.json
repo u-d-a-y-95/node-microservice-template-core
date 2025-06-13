@@ -7,8 +7,9 @@
     "dev": "tsc",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
-   "lint": "eslint",
-  "lint:fix": "eslint --fix"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prepare": "husky"
   },
   "author": "Saiful Islam Uday <uday.dev.bd@gmail.com>",
   "license": "MIT",
@@ -18,6 +19,8 @@
   "devDependencies": {
     "@eslint/js": "^9.28.0",
     "eslint": "^9.28.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "prettier": "3.5.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.34.0"
